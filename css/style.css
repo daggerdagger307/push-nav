@@ -102,7 +102,7 @@ a:hover {
 
 .toggle-btn,
 .close-btn {
-  color: #C3BBAF;
+  color: #fff;
   text-decoration: none;
   height: 40px;
   width: 40px;
@@ -110,7 +110,7 @@ a:hover {
 
 .toggle-btn:before,
 .close-btn:before {
-  border: 1.5px solid #C3BBAF;
+  border: 1.5px solid #fff;
   border-radius: 3em;
   display: inline-block;
   padding: 13px 11px;
@@ -125,6 +125,11 @@ a:hover {
   width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+.close-btn {
+  margin-left: 1em;
+  color: #C26C7E;
 }
 
 @media only screen and (max-width: 60em) {
@@ -163,6 +168,9 @@ a:hover {
   .toggle-btn,
   .close-btn {
     display: none;
+  }
+  .navigation ul {
+    margin: 0;
   }
   header {
     padding: 1em 1em;
