@@ -37,7 +37,7 @@ header {
 
 h1 {
     margin: 0;
-    color: $tan;  
+    color: $white;  
 }
 
 .toggle-btn {
@@ -60,16 +60,23 @@ h1 {
         border-bottom: 1px solid $white;
         text-decoration: none;
         color: $text-color;
-        text-align: center;
+        text-align: right;
     }
 }
 
 a:hover {
     letter-spacing: 5px;
-    background-color: $pink;
     transition: 1s;
-    border-radius: 3em;
     color: $white;
+}
+
+.button {
+    background-color: none;
+    transition: 1s;
+}
+
+.button:hover{
+    background-color: $pink;
 }
 
 .toggle-btn,
@@ -85,7 +92,6 @@ a:hover {
         padding: 13px 11px;
         height: 40px;
         width: 40px;
-        background-color: $pink;
     }
 
     span{
@@ -155,7 +161,10 @@ a:hover {
     .navigation ul{
         padding: 0;
         li{
-            display: inline-block;
+        position: relative;
+        top: 1em;
+        float: right;
+        display: inline-block;
         list-style-type: none;
         &:first-child a{
         border-top: none;
@@ -168,6 +177,13 @@ a:hover {
         color: $text-color;
         text-align: center;
     }
+        
+    a:hover {
+    letter-spacing: 5px;
+    transition: 1s;
+    color: $white;
+        background-color: $pink;
+}
 }
 }
 

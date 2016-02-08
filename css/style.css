@@ -55,7 +55,7 @@ header {
 
 h1 {
   margin: 0;
-  color: #C3BBAF;
+  color: #fff;
 }
 
 .toggle-btn {
@@ -82,15 +82,22 @@ h1 {
   border-bottom: 1px solid #fff;
   text-decoration: none;
   color: #43364F;
-  text-align: center;
+  text-align: right;
 }
 
 a:hover {
   letter-spacing: 5px;
-  background-color: #C26C7E;
   transition: 1s;
-  border-radius: 3em;
   color: #fff;
+}
+
+.button {
+  background-color: none;
+  transition: 1s;
+}
+
+.button:hover {
+  background-color: #C26C7E;
 }
 
 .toggle-btn,
@@ -109,7 +116,6 @@ a:hover {
   padding: 13px 11px;
   height: 40px;
   width: 40px;
-  background-color: #C26C7E;
 }
 
 .toggle-btn span,
@@ -168,6 +174,9 @@ a:hover {
     padding: 0;
   }
   .navigation ul li {
+    position: relative;
+    top: 1em;
+    float: right;
     display: inline-block;
     list-style-type: none;
   }
@@ -180,6 +189,12 @@ a:hover {
     text-decoration: none;
     color: #43364F;
     text-align: center;
+  }
+  .navigation ul a:hover {
+    letter-spacing: 5px;
+    transition: 1s;
+    color: #fff;
+    background-color: #C26C7E;
   }
 }
 
