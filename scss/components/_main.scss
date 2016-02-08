@@ -31,14 +31,13 @@ body{
 header {
     padding: 1em 1em;
     position: relative;
-    background-color: $tan;
+    background-color: $pink;
     margin: 0;
 }
 
 h1 {
     margin: 0;
-    color: $pink;
-    
+    color: $tan;  
 }
 
 .toggle-btn {
@@ -52,34 +51,43 @@ h1 {
     li{
         list-style-type: none;
         &:first-child a{
-        border-top: 1px solid $pink;
+        border-top: 1px solid $white;
         }
     }
     a{
         display: block;
         padding: .5em 1em;
-        border-bottom: 1px solid $green;
+        border-bottom: 1px solid $white;
         text-decoration: none;
         color: $text-color;
         text-align: center;
-        background-color: $pink;
     }
+}
+
+a:hover {
+    letter-spacing: 5px;
+    background-color: $pink;
+    transition: 1s;
+    border-radius: 3em;
+    color: $white;
 }
 
 .toggle-btn,
 .close-btn{
-    color: $pink;
+    color: $tan;
     text-decoration: none;
     height: 40px;
     width: 40px;
     &:before{
-        border: 1.5px solid $pink;
+        border: 1.5px solid $tan;
         border-radius: 3em;
         display: inline-block;
         padding: 13px 11px;
         height: 40px;
         width: 40px;
+        background-color: $pink;
     }
+
     span{
         @include element-invisible;
     }
@@ -89,6 +97,7 @@ h1 {
 // this is the only time you would use max-width for a mediaquery
 
 @media only screen and (max-width: 60em){
+
 
     .site-wrapper {
         position: relative;
@@ -131,10 +140,35 @@ h1 {
 // reset the page when desktop
 
 @media only screen and (min-width: 60em){
-    .toggle-btn,
-    .close-btn{
-    display: none;
+        .toggle-btn,
+        .close-btn{
+        display: none;
+        }
+    
+        header {
+        padding: 1em 1em;
+        position: relative;
+        background-color: $pink;
+        margin: 0;
     }
+    
+    .navigation ul{
+        padding: 0;
+        li{
+            display: inline-block;
+        list-style-type: none;
+        &:first-child a{
+        border-top: none;
+        }
+    }
+    a{
+        padding: .5em 1em;
+        border-bottom: none;
+        text-decoration: none;
+        color: $text-color;
+        text-align: center;
+    }
+}
 }
 
 //show navigation on screen when there is no JS

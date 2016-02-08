@@ -49,13 +49,13 @@ body.noscript .toggle-btn {
 header {
   padding: 1em 1em;
   position: relative;
-  background-color: #C3BBAF;
+  background-color: #C26C7E;
   margin: 0;
 }
 
 h1 {
   margin: 0;
-  color: #C26C7E;
+  color: #C3BBAF;
 }
 
 .toggle-btn {
@@ -73,22 +73,29 @@ h1 {
 }
 
 .navigation ul li:first-child a {
-  border-top: 1px solid #C26C7E;
+  border-top: 1px solid #fff;
 }
 
 .navigation ul a {
   display: block;
   padding: .5em 1em;
-  border-bottom: 1px solid #7D919C;
+  border-bottom: 1px solid #fff;
   text-decoration: none;
-  color: #222;
+  color: #43364F;
   text-align: center;
+}
+
+a:hover {
+  letter-spacing: 5px;
   background-color: #C26C7E;
+  transition: 1s;
+  border-radius: 3em;
+  color: #fff;
 }
 
 .toggle-btn,
 .close-btn {
-  color: #C26C7E;
+  color: #C3BBAF;
   text-decoration: none;
   height: 40px;
   width: 40px;
@@ -96,12 +103,13 @@ h1 {
 
 .toggle-btn:before,
 .close-btn:before {
-  border: 1.5px solid #C26C7E;
+  border: 1.5px solid #C3BBAF;
   border-radius: 3em;
   display: inline-block;
   padding: 13px 11px;
   height: 40px;
   width: 40px;
+  background-color: #C26C7E;
 }
 
 .toggle-btn span,
@@ -149,6 +157,29 @@ h1 {
   .toggle-btn,
   .close-btn {
     display: none;
+  }
+  header {
+    padding: 1em 1em;
+    position: relative;
+    background-color: #C26C7E;
+    margin: 0;
+  }
+  .navigation ul {
+    padding: 0;
+  }
+  .navigation ul li {
+    display: inline-block;
+    list-style-type: none;
+  }
+  .navigation ul li:first-child a {
+    border-top: none;
+  }
+  .navigation ul a {
+    padding: .5em 1em;
+    border-bottom: none;
+    text-decoration: none;
+    color: #43364F;
+    text-align: center;
   }
 }
 
